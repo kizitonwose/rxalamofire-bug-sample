@@ -12,6 +12,8 @@
 		0046EBE81EF09906003C3208 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0046EBE61EF09906003C3208 /* Main.storyboard */; };
 		0046EBEA1EF09906003C3208 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0046EBE91EF09906003C3208 /* Assets.xcassets */; };
 		0046EBED1EF09906003C3208 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0046EBEB1EF09906003C3208 /* LaunchScreen.storyboard */; };
+		0046EBF51EF099F9003C3208 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0046EBF41EF099F9003C3208 /* ApiRouter.swift */; };
+		17D9610736B5F86D0CBEB8E9 /* Pods_RxAlamofire_Bug_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D489F73F57043AA7C780A5 /* Pods_RxAlamofire_Bug_Sample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		0046EBE91EF09906003C3208 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0046EBEC1EF09906003C3208 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0046EBEE1EF09906003C3208 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0046EBF41EF099F9003C3208 /* ApiRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
+		542D7B2B0CFC66A1FC5895B0 /* Pods-RxAlamofire-Bug-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxAlamofire-Bug-Sample.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxAlamofire-Bug-Sample/Pods-RxAlamofire-Bug-Sample.release.xcconfig"; sourceTree = "<group>"; };
+		88D489F73F57043AA7C780A5 /* Pods_RxAlamofire_Bug_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxAlamofire_Bug_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5B4E23EB93C0C7C2A4069AE /* Pods-RxAlamofire-Bug-Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxAlamofire-Bug-Sample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxAlamofire-Bug-Sample/Pods-RxAlamofire-Bug-Sample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17D9610736B5F86D0CBEB8E9 /* Pods_RxAlamofire_Bug_Sample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				0046EBE11EF09905003C3208 /* RxAlamofire-Bug-Sample */,
 				0046EBE01EF09905003C3208 /* Products */,
+				7532148D0E8544F3D5062725 /* Pods */,
+				F7E7035622F709AF1BD20FA0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +69,26 @@
 				0046EBE91EF09906003C3208 /* Assets.xcassets */,
 				0046EBEB1EF09906003C3208 /* LaunchScreen.storyboard */,
 				0046EBEE1EF09906003C3208 /* Info.plist */,
+				0046EBF41EF099F9003C3208 /* ApiRouter.swift */,
 			);
 			path = "RxAlamofire-Bug-Sample";
+			sourceTree = "<group>";
+		};
+		7532148D0E8544F3D5062725 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5B4E23EB93C0C7C2A4069AE /* Pods-RxAlamofire-Bug-Sample.debug.xcconfig */,
+				542D7B2B0CFC66A1FC5895B0 /* Pods-RxAlamofire-Bug-Sample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F7E7035622F709AF1BD20FA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88D489F73F57043AA7C780A5 /* Pods_RxAlamofire_Bug_Sample.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0046EBF11EF09906003C3208 /* Build configuration list for PBXNativeTarget "RxAlamofire-Bug-Sample" */;
 			buildPhases = (
+				1505DF1D49FD87107373184E /* [CP] Check Pods Manifest.lock */,
 				0046EBDB1EF09905003C3208 /* Sources */,
 				0046EBDC1EF09905003C3208 /* Frameworks */,
 				0046EBDD1EF09905003C3208 /* Resources */,
+				40970F0B45BAB0E7C3154751 /* [CP] Embed Pods Frameworks */,
+				2B8DFA8964F722FAF67BEC0D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +126,7 @@
 				TargetAttributes = {
 					0046EBDE1EF09905003C3208 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = C9Q89FNE62;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,12 +162,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1505DF1D49FD87107373184E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2B8DFA8964F722FAF67BEC0D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxAlamofire-Bug-Sample/Pods-RxAlamofire-Bug-Sample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40970F0B45BAB0E7C3154751 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxAlamofire-Bug-Sample/Pods-RxAlamofire-Bug-Sample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0046EBDB1EF09905003C3208 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0046EBE51EF09905003C3208 /* ViewController.swift in Sources */,
+				0046EBF51EF099F9003C3208 /* ApiRouter.swift in Sources */,
 				0046EBE31EF09905003C3208 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,8 +340,10 @@
 		};
 		0046EBF21EF09906003C3208 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5B4E23EB93C0C7C2A4069AE /* Pods-RxAlamofire-Bug-Sample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C9Q89FNE62;
 				INFOPLIST_FILE = "RxAlamofire-Bug-Sample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.RxAlamofire-Bug-Sample";
@@ -272,8 +354,10 @@
 		};
 		0046EBF31EF09906003C3208 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 542D7B2B0CFC66A1FC5895B0 /* Pods-RxAlamofire-Bug-Sample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C9Q89FNE62;
 				INFOPLIST_FILE = "RxAlamofire-Bug-Sample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.RxAlamofire-Bug-Sample";
@@ -301,6 +385,7 @@
 				0046EBF31EF09906003C3208 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

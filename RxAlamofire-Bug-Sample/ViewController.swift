@@ -7,19 +7,17 @@
 //
 
 import UIKit
+import RxSwift
+import RxAlamofire
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+        
+        RxAlamofire.request(urlRequest: ApiRouter.user(withId: "randomm_id_8yma3bw7n"))
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
 
 }
 
